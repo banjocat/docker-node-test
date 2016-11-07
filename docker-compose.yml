@@ -1,0 +1,9 @@
+version: '2'
+services:
+    angular:
+        build: .
+        ports:
+            - "8000:3000"
+        volumes:
+            - "./angular:/app"
+        command: node app.js
